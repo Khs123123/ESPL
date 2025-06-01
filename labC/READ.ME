@@ -1,0 +1,28 @@
+# 🧪 Lab C – Advanced Shell: Pipes, Process Management, and History
+
+## 📘 Overview
+
+In this lab, we extended the shell from Lab 2 by implementing advanced features including pipes, job control, and command history. The lab also includes a standalone program to demonstrate inter-process communication using a pipeline.
+
+> 👥 This lab may be done in pairs.
+
+---
+
+## 🎯 Lab Goals
+
+- Use `pipe()`, `dup()`, and `execvp()` to implement pipelines
+- Extend the shell to support `|` (one pipe, two processes)
+- Implement a **process manager** with status tracking and control:
+  - `procs`, `wakeup`, `halt`, `ice`
+- Add a **command history** system with support for:
+  - `!!`, `!n`, and `hist`
+
+---
+
+## 🗂️ Deliverables
+
+- `mypipeline.c` – Standalone program simulating `ls -ls | wc`
+- `myshell.c` – Extended shell from Lab 2 with new features
+- `makefile` – Builds both `mypipeline` and `myshell`
+
+---
