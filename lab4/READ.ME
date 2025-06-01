@@ -1,0 +1,32 @@
+# 🧪 Lab 4 – ELF & Binary Patching
+
+## 📘 Overview
+
+In this lab, we explored the structure of ELF (Executable and Linkable Format) files and learned how to inspect, manipulate, and patch them using custom tools. We built a mini hex editor (`hexeditplus`) that loads, modifies, and saves binary content, including patching broken ELF executables.
+
+> 👥 This lab may be done in pairs.  
+> ⚠️ Task 0 must be completed before attending the lab.
+
+---
+
+## 🎯 Lab Goals
+
+- Understand the basics of ELF files
+- Use tools like `readelf` and `hexedit` to inspect binaries
+- Build a functional hex editor in C
+- Modify file contents in memory and save changes
+- Analyze ELF structure to locate and patch code sections
+- Fix broken executables by editing entry points or replacing functions
+- Practice software reverse engineering and binary-level manipulation
+
+---
+
+## 🗂️ Deliverables
+
+- `task1.c` – Implements `hexeditplus` (memory loader/editor)
+- `task4.c` – Contains patched function (e.g., fixed `count_digits`)
+- `makefile` – Builds both `task1` and `task4`
+
+Each program must compile for 32-bit ELF using `-m32 -fno-pie -fno-stack-protector`.
+
+---
