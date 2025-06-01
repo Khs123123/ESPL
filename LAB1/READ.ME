@@ -1,0 +1,49 @@
+# 🧪 BGU Systems Programming – Lab 1
+
+## 📘 Lab Overview
+
+**Lab 1: Program Memory and Pointers, Debugging, and Simulating Object-Oriented Programming**
+
+This lab introduces fundamental low-level programming concepts using C. It focuses on understanding how memory is structured and accessed, how pointers work, and how function pointers and structs can simulate object-like behavior.
+
+> 🧍‍♂️ **This lab is done SOLO. All work must be individual.**
+
+---
+
+## 🎯 Lab Goals
+
+- Refresh core **C programming** concepts.
+- Understand **memory addresses** and the **virtual memory layout**.
+- Practice using **pointers** to basic types, structs, and functions.
+- Simulate **object-oriented programming** in C using structs and function pointers.
+- Learn to use **GDB** to debug segmentation faults.
+
+---
+
+## 🧪 Tasks Summary
+
+### ✅ Task 0 – Debugging with GDB (Pre-lab)
+- Debug `count-words.c` using `gdb`.
+- Write a Makefile with debug flags.
+- Locate and fix the segmentation fault.
+
+### 🧠 Task 1 – Memory and Pointers
+- **T1a**: Explore memory segments using `addresses.c`.
+- **T1b**: Examine array memory layouts.
+- **T1c**: Use pointers to manipulate arrays.
+- **T1d**: Analyze distances between addresses.
+- **T1e**: Investigate command-line argument addresses.
+
+### 🧩 Task 2 – Structs and Function Pointers
+- Implement `map(char*, int, char(*)(char))`
+- Implement core functions:
+  - `my_get`, `cprt`, `encrypt`, `decrypt`, `oprt`
+- Chain multiple maps to transform input data.
+
+### 🧭 Task 3 – Simulated Menu System (OOP in C)
+- Build a function menu using:
+  ```c
+  struct fun_desc {
+    char *name;
+    char (*fun)(char);
+  };
